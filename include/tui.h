@@ -1,6 +1,7 @@
 #ifndef TUI_H
 #define TUI_H
 
+#include <wchar.h>
 #include <ncurses.h>
 
 // Окна
@@ -10,10 +11,6 @@ extern WINDOW* input_win;
 extern WINDOW* auth_win;
 
 // Функции
-void auth_tui();
-void init_tui();
-void cleanup_tui();
-void update_chat_list(const char* chats);
-void update_message_list(const char* messages);
+int ask_tui(const char *output, wchar_t *buffer);
 
 #endif // TUI_H
