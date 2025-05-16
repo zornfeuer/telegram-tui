@@ -11,8 +11,8 @@ find_library(NCURSES_LIBRARY ncurses)
 find_path(NCURSES_INCLUDE_DIR ncurses.h)
 
 # Поиск tdlib
-include_directories("~/Documents/projects/td/tdlib/include")
-link_directories("~/Documents/projects/td/tdlib/lib")
+include_directories("./td/tdlib/include")
+link_directories("./td/tdlib/lib")
 
 if (NCURSES_LIBRARY AND NCURSES_INCLUDE_DIR)
     message(STATUS "Found ncurses: ${NCURSES_LIBRARY}")
