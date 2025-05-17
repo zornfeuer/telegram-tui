@@ -49,7 +49,7 @@ typedef struct {
     int background_custom_emoji_id;
     int profile_accent_color_id;
     int profile_background_custom_emoji_id;
-    ChatPermissions permisions;
+    ChatPermissions permissions;
     int* postitions; //don't fucking know what it is
     int* chat_lists;
     int has_protected_content;
